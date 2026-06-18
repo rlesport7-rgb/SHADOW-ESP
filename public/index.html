@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOOTING STARS — eSports</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- LOADING OVERLAY -->
+  <div id="loadingOverlay">
+    <div class="loader-container">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">SHOOTING STARS</div>
+      <div class="loader-sub">Where legends rise</div>
+    </div>
+  </div>
+
+  <!-- TOP BAR -->
+  <header id="topbar">
+    <div class="logo-container">
+      <img src="/uploads/shadow.png" alt="SHOOTING STARS" class="site-logo" />
+      <span class="brand-name">SHOOTING STARS</span>
+    </div>
+    <button id="adminToggle" class="admin-shield" title="Admin Panel">🛡️</button>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="glow-logo">SS</div>
+          <h1>SHOOTING <span class="accent">STARS</span></h1>
+          <p class="tagline">Where legends rise</p>
+          <div class="hero-buttons">
+            <a href="#roster" class="btn btn-primary">Roster</a>
+            <a href="#games" class="btn btn-outline">Games</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="roster" class="section">
+      <div class="container">
+        <h2 class="section-title">ROSTER</h2>
+        <div id="rosterGrid" class="grid-3"></div>
+      </div>
+    </section>
+
+    <section id="games" class="section">
+      <div class="container">
+        <h2 class="section-title">GAMES & TEAMS</h2>
+        <div id="gamesList"></div>
+      </div>
+    </section>
+
+    <section id="stats" class="section">
+      <div class="container">
+        <h2 class="section-title">LEADERBOARD</h2>
+        <div id="statsTable"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ADMIN MODAL -->
+  <div id="adminModal" class="admin-modal">
+    <div class="admin-modal-content">
+      <span class="admin-close">&times;</span>
+      <div id="adminContainer"></div>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
